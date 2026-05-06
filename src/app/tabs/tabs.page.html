@@ -1,0 +1,20 @@
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home" href="/tabs/home">
+      <ion-icon [name]="tabs?.getSelected() === 'home' ? 'home' : 'home-outline'"></ion-icon>
+      <ion-label>Início</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="games" href="/tabs/games">
+      <ion-icon [name]="tabs?.getSelected() === 'games' ? 'game-controller' : 'game-controller-outline'"></ion-icon>
+      <ion-label>Games</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="news" href="/tabs/news">
+      <ion-icon [name]="tabs?.getSelected() === 'news' ? 'calendar' : 'calendar-outline'"></ion-icon>
+      <ion-label>Calendar</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="profile" href="/tabs/profile">
+      <ion-icon [name]="tabs?.getSelected() === 'profile' ? 'person-circle' : 'person-circle-outline'"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
